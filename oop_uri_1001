@@ -1,0 +1,12 @@
+class Addition:
+    def __init__(self,a,b):
+        self.a=a
+        self.b=b
+
+    def add(self):
+        print("X = {}".format(self.a+self.b))
+
+obj=Addition('a','b')
+obj.a=int(input())
+obj.b=int(input())
+obj.add()
