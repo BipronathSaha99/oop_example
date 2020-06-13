@@ -1,0 +1,22 @@
+#call a parent class
+class Cube():
+    def __init__(self,length,width,cube):
+        self.length=length
+        self.width=width
+        self.cube=cube
+    def info(self):
+        #logic
+        self.area_tray=self.length*self.width
+        self.area_cube=self.cube*self.cube
+        self.res=(int(self.area_tray/self.area_cube))
+        #return output
+        return self.res
+#input
+l=int(input("Enter the tray\'s length: "))
+w=int(input("Enter the tray\'s width: "))
+c=int(input("Enter the cube size: "))
+obj=Cube(l,w,c)
+#output
+print(" Number of cubes:",obj.info())
+
+print()
